@@ -1,0 +1,16 @@
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+       word1Array = list(word1)
+        word2Array = list(word2)
+
+        answer = []
+
+        longestWordLength = max(len(word1),len(word2))
+
+        
+
+        for i in range(longestWordLength):
+            if len(word1Array) > i:
+                answer.append(word1Array[i])
+            if len(word2Array) > i:
+                answer.append(word2Array[i])
